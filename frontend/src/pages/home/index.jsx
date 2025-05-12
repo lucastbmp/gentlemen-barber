@@ -1,9 +1,14 @@
-import { createRoot } from "react-dom/client"
+import React from 'react';
 import Navbar from "../../components/navbar"
-    <title>Gentlemen Barber</title>
-    <Navbar />
+ 
+export default function Home() {
+return (
+    <>
+        <Navbar />
+        <main>
+            <h1>Home</h1>
+        </main>
+    </>
+)
 
-
-
-export default Home;
-
+}

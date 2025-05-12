@@ -1,17 +1,19 @@
 import './navbar.css'
 import logo from '../assets/images/dh-barber-logo.jpg'
 
-function Navbar() {
+export default function Navbar() {
     return (
         <nav className="nav">
-            <img src={logo} alt="dh-logo" width='50px' /> 
+            <header>
+                <img src={logo} className="dh-logo" /> 
+                <h1 className="name">DH Gentlemen Barber</h1>
+            </header>
             <ul className="nav-list">
-                <li className="list-item">Home</li>
-                <li className="list-item">Agendamento</li>
-                <li className="list-item">Preços</li>
+                <li>Home</li>
+                <li>Agendamento</li>
+                <li>Preços</li>
             </ul>
         </nav>
     )
 }
 
-export default Navbar;
