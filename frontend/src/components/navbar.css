@@ -1,0 +1,45 @@
+.dh-logo {
+    height: 10px;
+    width: 20px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: #040500;
+    color: white;
+    position: relative;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 5vh;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+    
+    .nav-list li {
+        margin: 0.5rem 0;
+    }
+}
