@@ -12,9 +12,10 @@ return (
 	<div className="chair-bg"><img src={Chair} /></div>
             <div className="text">
 	        <h1>
-	            Lorem ipsum dolor sit amet
+	            DH Gentlemen Club
 	        </h1>
-	        <h2>Consectetur adipiscing elit. Pellentesque non nulla leo. Curabitur mollis rutrum ligula at interdum. Vivamus eget mauris nec justo tincidunt maximus. In aliquet interdum sapien, a commodo lorem. Quisque aliquet ipsum eget suscipit iaculis. Pellentesque placerat lorem id viverra rhoncus. Sed nec pulvinar urna. Nam vel gravida ante. Proin vulputate ac ex non vestibulum. Donec nulla justo, imperdiet in dignissim et, accumsan ut magna.
+		<h2>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis neque quis tellus elementum pulvinar non lacinia orci. Etiam non tincidunt mi, et aliquet turpis. Sed tempor leo non odio cursus consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a vestibulum odio. Nulla ornare molestie ex, vitae malesuada arcu vestibulum at. Suspendisse ultricies vel turpis vitae viverra. Quisque maximus laoreet commodo. Vivamus feugiat ante sed massa interdum accumsan. Aenean ornare gravida eros, tempus aliquam neque porttitor eget. Vivamus ac eleifend turpis. Suspendisse pellentesque turpis et tortor aliquam, et interdum est porttitor. Cras varius iaculis ligula a scelerisque.
 	        </h2>
             </div>
         </div>
