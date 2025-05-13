@@ -4,6 +4,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
+    zindex: 20;
 }
 .name {
     font-size:150%;
@@ -11,6 +12,9 @@ header {
 }
 
 .nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,7 +22,8 @@ header {
     padding: 1rem;
     background-color: #040500;
     color: white;
-    position: relative;
+    box-shadow: 0 0 32px black;
+    z-index: 20;
 }
 
 .nav-list {

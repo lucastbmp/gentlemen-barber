@@ -1,0 +1,25 @@
+.main-rapper {
+   margin-top: 80px;
+   width: 100%;
+   height: auto;
+   display: flex;	
+   align-items: center;    
+   h1 {
+      text-align: center;
+      width: 50%;
+      color: white;
+   }
+   .chair-bg {
+      position: relative;
+   }
+.chair-bg::after {
+      position: absolute;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background: #130f0f;
+background: linear-gradient(90deg, rgba(19, 15, 15, 0) 0%, rgba(87, 199, 133, 0) 0%, rgba(18, 19, 15, 1) 100%);
+content: "";
+   }
+
+}
