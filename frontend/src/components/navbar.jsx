@@ -1,5 +1,5 @@
 import './navbar.css'
-import logo from '../assets/images/dh-barber-logo.jpg'
+import logo from '../assets/images/dh-barber-logo.png'
 import { Link } from 'react-router-dom'
 
 export default function Navbar() {
