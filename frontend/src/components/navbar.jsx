@@ -7,7 +7,7 @@ export default function Navbar() {
         <nav className="nav">
             <header>
                <Link to="/"><img src={logo} className="dh-logo" /></Link> 
-                <h1 className="name"><Link to="/" className="custom-link">DH Gentlemen Barber</Link></h1>
+                <h1 className="name"><Link to="/" className="custom-link">DH Gentlemen Club</Link></h1>
             </header>
             <ul className="nav-list">
                 <li><Link to="/" className="custom-link">Home</Link></li>
