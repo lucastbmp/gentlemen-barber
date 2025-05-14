@@ -1,20 +1,25 @@
 import './navbar.css'
 import logo from '../assets/images/dh-barber-logo.png'
-import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     return (
         <nav className="nav">
             <logo-container>
-               <Link to="/"><img src={logo} className="dh-logo" /></Link> 
-                <h1 className="name"><Link to="/" className="custom-link">DH Gentlemen Club</Link></h1>
+                <a href="#home">
+                    <img src={logo} className="dh-logo" alt="Logo" />
+                </a>
+                <h1 className="name">
+                    <a href="#home" className="custom-link">DH Gentlemen Club</a>
+                </h1>
             </logo-container>
+
             <ul className="nav-list">
-                <li><Link to="/" className="custom-link">Home</Link></li>
-                <li>Agendamento</li>
-                <li><Link to="/products" className="custom-link">Produtos</Link></li>
+                <li><a href="#home" className="custom-link">Home</a></li>
+                <li><a href="#services" className="custom-link">Serviços</a></li>
+                <li><a href="#products" className="custom-link">Produtos</a></li>
             </ul>
         </nav>
-    )
+    );
 }
+
 

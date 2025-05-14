@@ -16,6 +16,7 @@ const router = createBrowserRouter([
 	path: '/products',
         element: <Products />
     }
+    
 ]);
 
 createRoot(document.getElementById('root')).render(
