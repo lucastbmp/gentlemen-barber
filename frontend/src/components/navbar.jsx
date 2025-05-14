@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 export default function Navbar() {
     return (
         <nav className="nav">
-            <header>
+            <logo-container>
                <Link to="/"><img src={logo} className="dh-logo" /></Link> 
                 <h1 className="name"><Link to="/" className="custom-link">DH Gentlemen Club</Link></h1>
-            </header>
+            </logo-container>
             <ul className="nav-list">
                 <li><Link to="/" className="custom-link">Home</Link></li>
                 <li>Agendamento</li>

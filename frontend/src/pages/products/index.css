@@ -1,0 +1,17 @@
+.dh-bg {
+    align-items: center;
+    margin-top: 10vh;
+    margin-left: 10vh;
+}
+
+.dh-bg img {
+    width: 400px
+}
+
+.hero {
+    align-items: center;
+    margin-left: 20vh;
+    h1 {
+        color: white;
+    }
+}
