@@ -8,9 +8,9 @@ export default function About() {
       <div className="about-content">
         <div className="about-text">
           <h1>Sobre nós</h1>
-          <p>Fundada em 2016, a DH Gentlemen Club nasceu com a missão de resgatar a tradição das
-          barbearias clássicas, oferecendo serviços de alta qualidade em um ambiente exclusivo para
-          cavalheiros. Nosso espaço combina o charme atemporal das barbearias de antigamente com
+          <p>Fundada em 2016, a <span className="style-name">DH Gentlemen Club</span> nasceu com a missão de resgatar a tradição das
+          barbearias clássicas, oferecendo serviços de <span className="style-name">alta qualidade</span> em um ambiente exclusivo para 
+          <span className="style-name"> cavalheiros</span>. Nosso espaço combina o charme atemporal das barbearias de antigamente com
           técnicas modernas de corte e tratamento.</p>
         </div>
       </div>

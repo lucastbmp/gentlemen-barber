@@ -24,15 +24,33 @@
     opacity: 0.90;
     color: var(--white-soft);
     h1 {
+        text-align: center;
         font-size: 4em;
         margin-top: 80px;
         margin-bottom: 5vh;
+        position: relative;
+        color: var(--gold-aged);
     }
+    h1::after {
+        content: "";
+        display: block;
+        width: 270px;
+        height: 3px;
+        background: var(--gold-aged);
+        margin-top: 3px;
+        border-radius: 2px;
+    }
+
     p {
         text-align: center;
         margin: 0 auto;
         font-size: 1.2rem;
         line-height: 1.6;
         white-space: pre-line;
+        margin-bottom: 200px;
+    }
+    .style-name {
+        font-weight: bold;
+        color: var(--gold-aged);
     }
 }
