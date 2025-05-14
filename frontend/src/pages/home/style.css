@@ -30,6 +30,10 @@ html {
   position: relative;
 }
 
+.logo {
+  margin-top: 7%;
+}
+
 .logo img {
   width: 100%
 }
@@ -92,18 +96,18 @@ html {
   white-space: nowrap;
   z-index: 2;
   opacity: 0.90;
-  color: var(--white-soft);
+  color: var(--white-smoke);
   margin-left: 10%;
   margin-right: 12%;
   margin-bottom: 1%;
 }
 
 .gentlemen {
-  color: var(--white-soft);
+  color: var(--white-smoke);
 }
 
 .date {
-  color: var(--white-soft);
+  color: var(--white-smoke);
 }
 
 
@@ -124,6 +128,23 @@ html {
 .home-text h3, h4 {
   margin-bottom: 3%;
   font-size: 1.25em;
+}
+
+.about-section {
+  background-color: var(--black-deep);
+  margin-top: 5%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.products-section {
+  margin-top: 5%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 768px) {  

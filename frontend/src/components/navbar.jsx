@@ -15,6 +15,7 @@ export default function Navbar() {
 
             <ul className="nav-list">
                 <li><a href="#home" className="custom-link">Home</a></li>
+                <li><a href="#about" className="custom-link">Sobre</a></li>
                 <li><a href="#services" className="custom-link">Serviços</a></li>
                 <li><a href="#products" className="custom-link">Produtos</a></li>
             </ul>

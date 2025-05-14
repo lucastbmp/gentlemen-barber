@@ -25,6 +25,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="about-section" id="about">
+          <About />
+        </section>
         <section className="products-section" id="products">
 	        <Products />
 	      </section>
