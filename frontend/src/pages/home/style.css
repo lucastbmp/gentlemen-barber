@@ -1,3 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#home, #products, #about {
+  scroll-margin-top: 80px;
+
+}
+
 .main-wrapper {
   margin-top: 7%;
   width: 100%;
@@ -93,6 +102,11 @@
   color: var(--white-soft);
 }
 
+.date {
+  color: var(--white-soft);
+}
+
+
 .home-text h1 {
   color: var(--gold-aged);
   margin-top: 6%;
@@ -107,12 +121,9 @@
   margin-bottom: 7%;
 }
 
-.home-text h3 {
+.home-text h3, h4 {
   margin-bottom: 3%;
-}
-
-.home-text h4 {
-  margin-bottom: 3%;
+  font-size: 1.25em;
 }
 
 @media (max-width: 768px) {  

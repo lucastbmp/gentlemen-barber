@@ -10,22 +10,22 @@ export default function Home() {
     <>
       <Navbar />
       <main-wrapper>
-        <section className="home-section">
-          <section className="home-content">
-              <section className="chair-bg">
+        <section className="home-section" id="home">
+          <div className="home-content">
+              <div className="chair-bg">
                 <img src={Chair} />
-              </section>
-            <section className="home-text">
+              </div>
+            <div className="home-text">
 	            <img src={Logo} className="logo"/>
 	            <h1>DH <span className="gentlemen">Gentlemen</span> Club</h1>
-              <h2>Since 2016</h2>
+              <h2>Since <span className="date">2016</span></h2>
               <h3>Entre em contato!</h3>
-              <h4>+55 (13)981370797</h4>
+              <h4>+55 (13) 98137-0797</h4>
               <h5>Governador Pedro de Toledo, 89, Santos, Sao Paulo, Brazil 11045-550</h5>
-            </section>
-          </section>
+            </div>
+          </div>
         </section>
-        <section className="products-section">
+        <section className="products-section" id="products">
 	        <Products />
 	      </section>
       </main-wrapper>
