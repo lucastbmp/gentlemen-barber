@@ -9,7 +9,7 @@ export default function Products() {
 	    <div className="main-rapper">
 	    <div className="dh-bg"><img src={DhBG} /></div>
 	        <Navbar />
-	        <div className="hero">
+	        <div className="home">
 	        <h1>Products page</h1>
 	        </div>
 	    </div>
