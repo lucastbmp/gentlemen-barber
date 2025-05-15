@@ -16,7 +16,7 @@ export default function Products() {
 	    <div className="main-wrapper">
 	        <div className="product-content">
 	        	<h1>Conheça nossos produtos</h1>
-				<div className="produtos-grid">
+				<div className="products-grid">
             		{productArr.map((produto) => (
             		  <Product
                 		key={produto.productName}

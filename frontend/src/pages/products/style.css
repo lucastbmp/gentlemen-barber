@@ -15,3 +15,10 @@
         color: white;
     }
 }
+
+.products-grid {
+	width: 10px;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+}
