@@ -29,7 +29,6 @@ footer {
     border-radius: 8px;
   }
   
-  /* Mobile: esconde o mapa */
   @media (max-width: 768px) {
     footer iframe {
       display: none;

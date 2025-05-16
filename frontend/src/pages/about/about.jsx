@@ -39,9 +39,9 @@ export default function About() {
   <div className="about-box">
     <div className="about-icon-box">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="var(--gold-aged)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-  <path d="M9 12l2 2 4-4" />
-</svg>
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+    <path d="M9 12l2 2 4-4" />
+  </svg>
     </div>
     <h3>Profissionais Qualificados</h3>
     <p>Nossa equipe é formada por barbeiros com anos de experiência e constante atualização técnica.</p>

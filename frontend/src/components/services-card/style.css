@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    align-items: stretch; /* FORÇA todos os cards a mesma altura */
+    align-items: stretch; 
   }
   
   .service-card {
@@ -65,11 +65,11 @@
     font-size: 0.95rem;
     line-height: 1.5;
     margin-bottom: 1.2rem;
-    color: var(--white-soft); /* texto visível */
+    color: var(--white-soft); 
   }
   
   .whatsapp-button {
-    margin-top: auto; /* empurra o botão pro final */
+    margin-top: auto;
     display: inline-block;
     color: var(--gold-aged);
     text-decoration: none;
