@@ -130,22 +130,6 @@ html {
   font-size: 1.25em;
 }
 
-.about-section {
-  background-color: var(--black-deep);
-  margin-top: 5%;
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.products-section {
-  margin-top: 5%;
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
 
 @media (max-width: 768px) {  
   .chair-bg {

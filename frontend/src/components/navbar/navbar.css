@@ -1,3 +1,10 @@
+.custom-link.active {
+    color: var(--classic-pine);
+    opacity: 1;
+    font-weight: bold;
+  }
+  
+
 logo-container {
     margin-left: 1.5rem;
     display: block;
@@ -14,7 +21,6 @@ logo-container {
 }
 
 .nav {
-    opacity: 0.88;
     box-sizing: border-box;
     position: fixed;
     top: 0;
@@ -37,7 +43,6 @@ logo-container {
 }
 
 .nav-list li{
-    color: inherit;
     text-decoration: none;
     font-size: 1.5em;
     margin-right: 6vh;
@@ -47,6 +52,7 @@ logo-container {
     color: inherit;
     text-decoration: none;
     opacity: 0.7;
+    transition: color 0.7s ease, opacity 0.7s ease;
 }
 
 .dh-logo {

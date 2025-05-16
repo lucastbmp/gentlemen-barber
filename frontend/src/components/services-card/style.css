@@ -1,0 +1,83 @@
+.services-section {
+    padding: 4rem 2rem 4rem 2rem;
+    background-color: var(--vintage-green);
+    color: var(--white-soft);
+    text-align: center;
+  }
+  
+  .services-title {
+    font-size: 2.5rem;
+    color: var(--gold-aged);
+    margin-bottom: 4rem;
+    position: relative;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    align-items: stretch; /* FORÇA todos os cards a mesma altura */
+  }
+  
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(200, 169, 106, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    color: var(--white-soft);
+    
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .service-icon-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .scissors-icon {
+    font-size: 1.4rem;
+    color: var(--gold-aged);
+  }
+  
+  .service-price {
+    font-weight: bold;
+    color: var(--gold-aged);
+  }
+  
+  .service-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+    color: var(--white-soft); /* texto visível */
+  }
+  
+  .whatsapp-button {
+    margin-top: auto; /* empurra o botão pro final */
+    display: inline-block;
+    color: var(--gold-aged);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+  
+  .whatsapp-button:hover {
+    color: var(--classic-pine);
+  }
+  
