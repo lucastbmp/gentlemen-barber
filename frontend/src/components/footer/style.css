@@ -28,7 +28,29 @@ footer {
     margin-top: 1rem;
     border-radius: 8px;
   }
+  .footer-socials {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   
+  .social-button {
+    padding: 0.6rem 1.4rem;
+    border: 1px solid var(--gold-aged);
+    border-radius: 6px;
+    color: var(--gold-aged);
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-button:hover {
+    background-color: var(--gold-aged);
+    color: #0f0f0f;
+  }
+
   @media (max-width: 768px) {
     footer iframe {
       display: none;

@@ -22,9 +22,8 @@ export default function Home() {
 	            <img src={Logo} className="logo"/>
 	            <h1>DH <span className="gentlemen">Gentlemen</span> Club</h1>
               <h2>Since <span className="date">2016</span></h2>
-              <h3>Veja nossos serviços!</h3>
-              <h4>Agende hoje! +55 (13) 98137-0797</h4>
-              <h5>Governador Pedro de Toledo, 89, Santos, Sao Paulo, Brazil 11045-550</h5>
+              <a href="#services" className="cta-button">Agende seu horário!</a>
+              <h5>Governador Pedro de Toledo, 89, Santos, Sao Paulo, Brasil 11045-550</h5>
             </div>
           </div>
         </section>
