@@ -2,7 +2,7 @@ import "./style.css";
 
 export default function Footer() {
   return (
-    <footer>
+    <section className="footer" id="footer">
       <h1>Como chegar ?</h1>
       <p>Governador Pedro de Toledo, 89, Santos, São Paulo, Brazil 11045-550</p>
       <iframe
@@ -23,6 +23,6 @@ export default function Footer() {
         <i className="fab fa-instagram"></i> Instagram
       </a>
     </div>
-    </footer>
+    </section>
   );
 }

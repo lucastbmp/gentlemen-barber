@@ -35,7 +35,7 @@
 .nav-list {
   display: flex;
   gap: 3rem;
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 .nav-list li {

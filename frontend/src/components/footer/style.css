@@ -1,4 +1,4 @@
-footer {
+.footer {
     padding: 2rem;
     background-color: #0f0f0f;
     color: var(--white-soft);
@@ -10,17 +10,17 @@ footer {
     gap: 1rem;
   }
 
-  footer h1 {
+  .footer h1 {
     font-size: 3em;
     color: var(--gold-aged);
   }
   
-  footer p {
+  .footer p {
     max-width: 90%;
     margin: 0 auto;
   }
   
-  footer iframe {
+  .footer iframe {
     border: 0;
     width: 100%;
     max-width: 800px;

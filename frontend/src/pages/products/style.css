@@ -2,6 +2,24 @@
     scroll-margin-top: 80px;
 }
 
+.buy-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1.2rem;
+    background-color: transparent;
+    border: 1px solid var(--gold-aged);
+    color: var(--gold-aged);
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .buy-button:hover {
+    background-color: var(--gold-aged);
+    color: #0f0f0f;
+}
+
 .products-section {
     background-color: var(--heritage-green);
 }

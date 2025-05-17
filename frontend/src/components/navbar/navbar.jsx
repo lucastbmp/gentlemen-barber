@@ -51,6 +51,7 @@ export default function Navbar() {
         <li><a href="#about" className={`custom-link ${activeSection === 'about' ? 'active' : ''}`}>Sobre</a></li>
         <li><a href="#services" className={`custom-link ${activeSection === 'services' ? 'active' : ''}`}>Serviços</a></li>
         <li><a href="#products" className={`custom-link ${activeSection === 'products' ? 'active' : ''}`}>Produtos</a></li>
+        <li><a href="#footer" className={`custom-link ${activeSection === 'footer' ? 'active' : ''}`}>Localização</a></li>
       </ul>
     </nav>
   );
