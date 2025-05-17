@@ -1,51 +1,45 @@
-.custom-link.active {
-    color: var(--classic-pine);
-    opacity: 1;
-    font-weight: bold;
-  }
-  
-
-logo-container {
-    margin-left: 1.5rem;
-    display: block;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2rem;
-    z-index: 20;
-}
-.name {
-    font-size:150%;
-    font-weight: bold;
-    color: #C8A96A;
-}
 
 .nav {
-    box-sizing: border-box;
     position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding: 1rem;
     background-color: #040500;
     color: white;
-    box-shadow: 0 0 20px black;
     z-index: 40;
+    box-shadow: 0 0 20px black;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 2rem;
+  }
+
+  .dh-logo {
+    width: 50px;
+    margin-left: 0;
+  }
+
+.name {
+    font-size: 150%;
+    font-weight: bold;
+    color: #C8A96A;
 }
 
 .nav-list {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 3rem;
+  margin-right: 2rem;
 }
 
-.nav-list li{
-    text-decoration: none;
+.nav-list li {
     font-size: 1.5em;
-    margin-right: 6vh;
 }
 
 .custom-link {
@@ -55,22 +49,46 @@ logo-container {
     transition: color 0.7s ease, opacity 0.7s ease;
 }
 
-.dh-logo {
-    width: 50px;
-    margin-left: 5rem;
+.custom-link.active {
+    color: var(--classic-pine);
+    opacity: 1;
+    font-weight: bold;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--gold-aged);
+    border-radius: 3px;
+}
+
+
 @media (max-width: 768px) {
-    .nav {
-        display: none;
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-list {
         position: absolute;
         top: 100%;
-        left: 0;
-        width: 100%;
+        right: 0;
+        background-color: #0f0f0f;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
         padding: 1rem 2rem;
+        display: none;
     }
-    
-    .nav-list li {
-        margin: 0.5rem 0;
+
+    .nav-list.open {
+        display: flex;
     }
 }

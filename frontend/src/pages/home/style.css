@@ -2,45 +2,80 @@ html {
   scroll-behavior: smooth;
 }
 
-@keyframes shine {
-  0% {
-    text-shadow: 0 0 5px var(--gold-aged), 0 0 10px var(--classic-pine);
-  }
-  50% {
-    text-shadow: 0 0 15px var(--gold-aged), 0 0 25px var(--classic-pine);
-  }
-  100% {
-    text-shadow: 0 0 5px var(--gold-aged), 0 0 10px var(--classic-pine);
-  }
-}
-
-.home-text h1, .home-text h2 {
-  animation: shine 2.5s infinite ease-in-out;
-}
-
-.cta-button {
-  margin-top: 2rem;
-  padding: 0.75rem 1.5rem;
-  background-color: transparent;
-  border: 1px solid var(--gold-aged);
-  color: var(--gold-aged);
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2em;
-  border-radius: 6px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  margin-bottom: 2rem;
-}
-
-.cta-button:hover {
-  background-color: var(--gold-aged);
-  color: #0f0f0f;
-}
-
 #home, #products, #about {
   scroll-margin-top: 80px;
 
 }
+
+.slogan-row {
+  margin-top: 70px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.slogan-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 4px;
+}
+
+.side-text {
+  margin-top: 50px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--gold-aged);
+
+}
+.since {
+  color: var(--gold-aged);
+  font-size: 1.2em;
+}
+
+.since-date {
+  color: var(--white-smoke);
+  font-size: 1.2em;
+}
+
+.barber {
+  color: var(--white-smoke);
+}
+
+.shop {
+  color: var(--gold-aged);
+}
+
+.line-horizontal {
+  width: 120px;
+  height: 2px;
+  background-color: var(--gold-aged);
+  opacity: 0.6;
+}
+
+.center-logo {
+  margin-top: 50px;
+  width: 100px;
+  height: auto;
+}
+
+.slogan-barberline {
+  margin-top: -35px;
+  display: flex;
+  justify-content: center;
+  gap: 13rem;
+}
+
+.barber-script {
+  margin-top: 11px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: var(--gold-aged);
+  gap: 4rem;
+}
+
 
 .main-wrapper {
   margin-top: 7%;
@@ -50,6 +85,7 @@ html {
 
 
 .home-section {
+  background-color: var(--deep-forest);
   margin-top: 5%;
   width: 100%;
   position: relative;
@@ -86,23 +122,6 @@ html {
   display: block;
 }
 
-.chair-bg::after { 
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  background: 
-    linear-gradient(90deg,
-      rgba(18, 19, 15, 1) 0%,
-      rgba(147, 106, 68, 0) 8%,
-      rgba(51, 51, 51, 0) 50%,
-      rgba(147, 106, 68, 0) 95%,
-      rgba(18, 19, 15, 1) 100%
-    );
-}
 
 .chair-bg::before {
   content: "";
@@ -110,16 +129,40 @@ html {
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
+  pointer-events: none;
   width: 100%;
   height: 100%;
-  pointer-events: none; 
-  background:
+  background: 
+    radial-gradient(ellipse at center bottom,
+      rgba(46, 78, 63, 0) 0%,
+      rgba(46, 78, 63, 0.1) 60%,
+      rgba(46, 78, 63, 0.3) 80%,
+      #2e4e3f 100%),
     linear-gradient(to bottom,
-      rgba(18, 19, 15, 1),
-      transparent 10%,
-      transparent 80%, 
-      rgba(18, 19, 15, 1)
-    );
+      #2e4e3f 0%,
+      rgba(46, 78, 63, 0) 10%,
+      rgba(46, 78, 63, 0) 60%,
+      rgba(46, 78, 63, 0.4) 90%,
+      #2e4e3f 100%);
+}
+
+
+.chair-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    #2e4e3f 0%,
+    rgba(46, 78, 63, 0.0) 10%, 
+    rgba(46, 78, 63, 0.0) 90%,
+    #2e4e3f 100% 
+  );
 }
 
 .home-text {
@@ -166,20 +209,129 @@ html {
 }
 
 
-@media (max-width: 768px) {  
-  .chair-bg {
-    display: none;
-    margin: 2vh 0;
+@keyframes shine {
+  0% {
+    text-shadow: 0 0 5px var(--gold-aged), 0 0 10px var(--classic-pine);
   }
-  
-  .chair-bg img {
-    display: none;
-    width: 100%;
-    max-width: 400px;
+  50% {
+    text-shadow: 0 0 15px var(--gold-aged), 0 0 25px var(--classic-pine);
+  }
+  100% {
+    text-shadow: 0 0 5px var(--gold-aged), 0 0 10px var(--classic-pine);
+  }
+}
+
+.home-text h1, .home-text h2 {
+  animation: shine 2.5s infinite ease-in-out;
+}
+
+.cta-button {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  border: 1px solid var(--gold-aged);
+  color: var(--gold-aged);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.cta-button:hover {
+  background-color: var(--gold-aged);
+  color: #0f0f0f;
+}
+
+
+@media (min-width: 1920px) {
+  .home-content {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .home-section {
+    margin-top: 4rem;
+    background: url("../../assets/images/chair.png") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
   }
 
-  .home-content {
-    display: flex;
-    flex-direction: column;
+  .home-section::before,
+  .home-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .home-section::before {
+    background: linear-gradient(
+      to bottom,
+      #2e4e3f 0%,
+      rgba(46, 78, 63, 0) 10%,
+      rgba(46, 78, 63, 0) 60%,
+      rgba(46, 78, 63, 0.4) 90%,
+      #2e4e3f 100%
+    );
+  }
+
+  .home-section::after {
+    background: radial-gradient(
+      ellipse at center bottom,
+      rgba(46, 78, 63, 0) 0%,
+      rgba(46, 78, 63, 0.2) 70%,
+      #2e4e3f 100%
+    );
+  }
+
+
+  .chair-bg {
+    display: none;
+  }
+
+  .home-text {
+    opacity: 1;
+    padding: 2rem 1rem;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    font-weight: 600;
+  }
+
+  .home-text .logo {
+    width: 120px;
+    margin-bottom: 1rem;
+  }
+
+  .home-text h1, .home-text h2 {
+    animation: shine 2.5s infinite ease-in-out;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .home-text h3, .home-text h4, .home-text h5 {
+    display: none;
+  }
+
+  .cta-button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    background-color: #000;
+    border: 1px solid var(--gold-aged);
+    color: var(--gold-aged);
+  }
+
+  .cta-button:hover {
+    background-color: var(--gold-aged);
+    color: #000;
   }
 }

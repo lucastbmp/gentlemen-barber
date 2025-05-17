@@ -19,11 +19,30 @@ export default function Home() {
                 <img src={Chair} />
               </div>
             <div className="home-text">
-	            <img src={Logo} className="logo"/>
+              <div className="card-slogan">
+               <div className="slogan-row">
+                <div className="slogan-side">
+                  <span className="side-text"><span className="since">SINCE</span></span>
+                   <div className="line-horizontal"></div>
+                </div>
+                <img
+                src={Logo}
+                alt="Logo DH"
+                className="center-logo"
+                 />
+                <div className="slogan-side">
+                   <span className="side-text"><span className="since-date">2016</span></span>
+                   <div className="line-horizontal"></div>
+                 </div>
+               </div>
+              <div className="slogan-barberline">
+                <span className="barber-script"><span className="barber">Barber</span></span>
+                <span className="barber-script"><span className="shop">Shop</span></span>
+              </div>
+            </div>
 	            <h1>DH <span className="gentlemen">Gentlemen</span> Club</h1>
-              <h2>Since <span className="date">2016</span></h2>
-              <a href="#services" className="cta-button">Agende seu horário!</a>
-              <h5>Governador Pedro de Toledo, 89, Santos, Sao Paulo, Brasil 11045-550</h5>
+              <a href="#services" className="cta-button">Veja nossos serviços!</a>
+              <h5>Governador Pedro de Toledo, 89, Santos, Sao Paulo, Brazil 11045-550</h5>
             </div>
           </div>
         </section>
