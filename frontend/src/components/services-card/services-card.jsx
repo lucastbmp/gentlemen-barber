@@ -49,7 +49,7 @@ export default function ServicesCard() {
          <div className="service-header">
            <div className="service-icon-title">
              <span className="scissors-icon">✂️</span>
-             <h3>{s.title}</h3>
+             <h3 className="service-title">{s.title}</h3>
            </div>
            <span className="service-price">R$ {s.price}</span>
          </div>

@@ -3,6 +3,7 @@
     background-color: var(--vintage-green);
     color: var(--white-soft);
     text-align: center;
+    flex-wrap: nowrap;
   }
   
   .services-title {
@@ -20,6 +21,8 @@
   }
   
   .service-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--gold-aged);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -40,7 +43,7 @@
   
   .service-header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 1rem;
   }
@@ -48,7 +51,19 @@
   .service-icon-title {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+  
+  .service-icon-title h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--white-soft);
+    word-break: break-word;
+    max-width: 90%;
+    line-height: 1.2;
   }
   
   .scissors-icon {
@@ -57,9 +72,12 @@
   }
   
   .service-price {
-    font-weight: bold;
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 800;
     color: var(--gold-aged);
   }
+  
   
   .service-description {
     font-size: 0.95rem;

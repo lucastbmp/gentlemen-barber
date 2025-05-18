@@ -26,13 +26,14 @@ html {
 .side-text {
   margin-top: 50px;
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 1000;
   color: var(--gold-aged);
 
 }
 .since {
   color: var(--gold-aged);
   font-size: 1.2em;
+  font-weight: 1000px;
 }
 
 .since-date {
