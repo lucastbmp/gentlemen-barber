@@ -6,6 +6,10 @@ const productArr = [
     { productName: 'Loção', price: '60' },
     { productName: 'Shampoo', price: '60' },
     { productName: 'Óleo', price: '60' },
+    { productName: 'Shampoo Fresh Men', price: '60'},
+    { productName: 'Pomada Modeladora', price: '60'},
+    { productName: 'Gel', price: '60'},
+    { productName: 'Balm', price: '60'},
 ];
 
 export default function Products() {
