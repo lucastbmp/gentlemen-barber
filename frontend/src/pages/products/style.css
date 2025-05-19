@@ -35,6 +35,7 @@
 
 .product-content h1 {
   color: var(--white-soft);
+  font-weight: 600;
   font-size: 3em;
   margin-bottom: 2rem;
 }
@@ -43,6 +44,8 @@
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  overflow: visible !important;
+  position: relative;
 }
 
 .products-carousel .slick-slide {
@@ -50,28 +53,48 @@
   justify-content: center;
   padding: 0 1rem;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .carousel-slide {
   width: 100%;
   max-width: 280px;
+  transition: all 0.3s ease;
 }
 
-
-.products-carousel .slick-slide {
-  display: flex !important;
-  justify-content: center;
-  padding: 0 1rem;
+.products-carousel,
+.slick-list,
+.slick-track {
+  overflow: visible !important;
 }
 
-.slide-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.slick-prev,
+.slick-next {
+  display: none !important;
 }
 
-@media (max-width: 768px) {
-  .products-carousel .slick-slide {
-    padding: 0 0.5rem;
+@media (max-width: 1024px) {
+  .slick-prev,
+  .slick-next {
+    display: flex !important;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    color: var(--gold-aged);
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    transition: background 0.3s ease;
   }
+
+  .slick-prev:hover,
+  .slick-next:hover {
+    background-color: var(--gold-aged);
+    color: #0f0f0f;
+  }
+
+  .slick-prev { left: -40px; }
+  .slick-next { right: -40px; }
 }
