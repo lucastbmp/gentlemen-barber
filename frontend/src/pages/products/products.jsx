@@ -16,7 +16,7 @@ const productArr = [
 ];
 
 export default function Products() {
-  const settings = {
+  const settings = {  
     centerMode: true,
     centerPadding: '200px',
     slidesToShow: 1.5,
@@ -37,9 +37,11 @@ export default function Products() {
       {
         breakpoint: 768,
         settings: {
-          centerPadding: '30px',
+          centerMode: true,
+          centerPadding: '160px',
           slidesToShow: 1,
           arrows: true,
+          focusOnSelect: true,
         }
       }
     ]

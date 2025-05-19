@@ -260,7 +260,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 20px;
   background-color: var(--black-deep);
   z-index: 1;
 }

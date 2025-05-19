@@ -98,3 +98,33 @@
   .slick-prev { left: -40px; }
   .slick-next { right: -40px; }
 }
+
+@media (max-width: 768px) {
+  .slick-prev,
+  .slick-next {
+    display: flex !important;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    color: var(--gold-aged);
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    transition: background 0.3s ease;
+  }
+
+  .slick-prev:hover,
+  .slick-next:hover {
+    background-color: var(--gold-aged);
+    color: #0f0f0f;
+  }
+
+  .slick-prev { left: -40px; }
+  .slick-next { right: -40px; }
+  
+  .carousel-slide {
+    max-width: 250px;
+  }
+}
