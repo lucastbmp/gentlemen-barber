@@ -18,8 +18,8 @@ const productArr = [
 export default function Products() {
   const settings = {
     centerMode: true,
-    centerPadding: '190px',
-    slidesToShow: 1,
+    centerPadding: '200px',
+    slidesToShow: 1.5,
     arrows: false,
     dots: false,
     infinite: false,

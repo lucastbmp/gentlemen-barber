@@ -254,15 +254,32 @@ html {
 
 
 @media (max-width: 768px) {
-  .home-section {
-    margin-top: 4rem;
+.home-section {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  background-color: var(--black-deep);
+  z-index: 1;
+}
+  .home-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
     background: url("../../assets/images/chair.png") center center no-repeat;
     background-size: cover;
-    position: relative;
-    overflow: hidden;
+    opacity: 0.3;
+    z-index: 0;
   }
 
-  .home-section::before,
+
+  .home-section > * {
+    position: relative;
+    z-index: 1;
+  }
+
   .home-section::after {
     content: "";
     position: absolute;
@@ -297,7 +314,10 @@ html {
     display: none;
   }
 
+
+
   .home-text {
+    font-weight: 9;
     opacity: 1;
     padding: 2rem 1rem;
     margin: 0;
