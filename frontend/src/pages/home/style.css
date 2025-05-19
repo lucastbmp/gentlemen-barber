@@ -89,14 +89,14 @@ html {
   background-color: var(--deep-forest);
   margin-top: 5%;
   width: 100%;
-  position: relative;
+  /*position: relative;*/
   display: flex;
   align-items: center;
 }
 
 .home-content {
   margin-top: 1%;
-  margin-bottom: 1%;
+  /*margin-bottom: 1%;*/
   width: 70%;
   display: flex;
   position: relative;
@@ -113,7 +113,6 @@ html {
 .chair-bg {
   position: relative;
   margin-top: 3%;
-  margin-left: 1.25%;
   z-index: 1;
 }
 
@@ -121,10 +120,10 @@ html {
   width: 80vh;
   height: auto;
   display: block;
-}
+} 
 
 
-.chair-bg::before {
+/*.chair-bg::before {
   content: "";
   position: absolute;
   top: 0;
@@ -146,7 +145,7 @@ html {
       rgba(46, 78, 63, 0) 60%,
       rgba(46, 78, 63, 0.4) 90%,
       #2e4e3f 100%);
-}
+}*/
 
 
 .chair-bg::after {
@@ -159,7 +158,7 @@ html {
   pointer-events: none;
   background: linear-gradient(
     90deg,
-    #2e4e3f 0%,
+    /*#2e4e3f 0%,*/
     rgba(46, 78, 63, 0.0) 10%, 
     rgba(46, 78, 63, 0.0) 90%,
     #2e4e3f 100% 
@@ -272,7 +271,7 @@ html {
     z-index: 0;
   }
 
-  .home-section::before {
+/*  .home-section::before {
     background: linear-gradient(
       to bottom,
       #2e4e3f 0%,
@@ -282,15 +281,16 @@ html {
       #2e4e3f 100%
     );
   }
+*/
 
-  .home-section::after {
+  /*.home-section::after {
     background: radial-gradient(
       ellipse at center bottom,
       rgba(46, 78, 63, 0) 0%,
       rgba(46, 78, 63, 0.2) 70%,
       #2e4e3f 100%
     );
-  }
+  }*/
 
 
   .chair-bg {
